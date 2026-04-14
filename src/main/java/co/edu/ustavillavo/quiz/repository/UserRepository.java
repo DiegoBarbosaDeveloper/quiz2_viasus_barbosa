@@ -7,5 +7,5 @@ import co.edu.ustavillavo.quiz.repository.model.UserEntity;
 
 @Repository
 public interface UserRepository extends JpaRepository<UserEntity, Long> {
-    
+    UserEntity findByUserName(String userName);
 }
