@@ -7,5 +7,5 @@ import co.edu.ustavillavo.quiz.repository.model.KitchenEntity;
 
 @Repository
 public interface KitchenRepository extends JpaRepository<KitchenEntity, Long> {
-    
+    boolean existsByRestaurantName(String restaurantName);
 }

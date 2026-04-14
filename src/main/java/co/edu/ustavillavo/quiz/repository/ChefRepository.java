@@ -7,5 +7,5 @@ import co.edu.ustavillavo.quiz.repository.model.ChefEntity;
 
 @Repository
 public interface ChefRepository extends JpaRepository<ChefEntity, Long> {
-    
+    boolean existsByName(String name);
 }
