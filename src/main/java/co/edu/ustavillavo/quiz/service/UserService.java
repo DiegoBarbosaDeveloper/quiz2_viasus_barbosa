@@ -27,8 +27,5 @@ public class UserService {
     public User findById(Long id){
         return mapper.toDto(userRepository.findById(id).orElseThrow(() -> new RuntimeException("User not found")));
     }
-
-    
-
-    
+        
 }
