@@ -19,7 +19,7 @@ public class KitchenEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idKitchen;
 
-    private String restauranName;
+    private String restaurantName;
 
     private ChefEntity chef;
 
